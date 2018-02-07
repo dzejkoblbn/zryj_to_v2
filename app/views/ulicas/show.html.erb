@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id ulicy:</strong>
+  <%= @ulica.id_ulicy %>
+</p>
+
+<p>
+  <strong>Nazwa ulicy:</strong>
+  <%= @ulica.nazwa_ulicy %>
+</p>
+
+<%= link_to 'Edit', edit_ulica_path(@ulica) %> |
+<%= link_to 'Back', ulicas_path %>
