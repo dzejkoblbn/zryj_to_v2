@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Czas realizacji:</strong>
+  <%= @zamowieny.czas_realizacji %>
+</p>
+
+<p>
+  <strong>Data zamownienia:</strong>
+  <%= @zamowieny.data_zamownienia %>
+</p>
+
+<p>
+  <strong>Id zamowienia:</strong>
+  <%= @zamowieny.id_zamowienia %>
+</p>
+
+<p>
+  <strong>Koszt:</strong>
+  <%= @zamowieny.koszt %>
+</p>
+
+<%= link_to 'Edit', edit_zamowieny_path(@zamowieny) %> |
+<%= link_to 'Back', zamowienies_path %>

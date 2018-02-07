@@ -1,0 +1,2 @@
+class Obszar < ApplicationRecord
+end

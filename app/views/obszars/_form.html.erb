@@ -1,0 +1,27 @@
+<%= form_with(model: obszar, local: true) do |form| %>
+  <% if obszar.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(obszar.errors.count, "error") %> prohibited this obszar from being saved:</h2>
+
+      <ul>
+      <% obszar.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id_obszaru %>
+    <%= form.number_field :id_obszaru, id: :obszar_id_obszaru %>
+  </div>
+
+  <div class="field">
+    <%= form.label :kod_pocztowy %>
+    <%= form.text_field :kod_pocztowy, id: :obszar_kod_pocztowy %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

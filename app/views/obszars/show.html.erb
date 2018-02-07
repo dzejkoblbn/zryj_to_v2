@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id obszaru:</strong>
+  <%= @obszar.id_obszaru %>
+</p>
+
+<p>
+  <strong>Kod pocztowy:</strong>
+  <%= @obszar.kod_pocztowy %>
+</p>
+
+<%= link_to 'Edit', edit_obszar_path(@obszar) %> |
+<%= link_to 'Back', obszars_path %>

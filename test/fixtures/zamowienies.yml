@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  czas_realizacji: 1.5
+  data_zamownienia: 2018-02-07
+  id_zamowienia: 1
+  koszt: 1.5
+
+two:
+  czas_realizacji: 1.5
+  data_zamownienia: 2018-02-07
+  id_zamowienia: 1
+  koszt: 1.5
