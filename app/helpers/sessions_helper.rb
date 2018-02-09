@@ -1,6 +1,6 @@
 module SessionsHelper
   def log_in(uzytkownik)
-  session[:index] = uzytkownik.id
+  session[:index] = uzytkownik.index
 end
   def current_uzytkownik
     @current_uzytkownik ||= Uzytkownik.find_by(index: session[:index])
