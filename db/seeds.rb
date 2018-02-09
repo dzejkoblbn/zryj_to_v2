@@ -15,7 +15,8 @@ uzytkowniks = Uzytkownik.create(
       nazwisko: 'Kowalski',
       nr_budynku_u: '1a',
       nr_mieszkania_u: '1',
-      ulica_u: 'Powstanców'
+      ulica_u: 'Powstanców',
+      password: '111111'
     },
     {
       index: '222222',
@@ -24,7 +25,8 @@ uzytkowniks = Uzytkownik.create(
       nazwisko: 'Zaolzy',
       nr_budynku_u: '2f',
       nr_mieszkania_u: '4',
-      ulica_u: 'Strzegomska'
+      ulica_u: 'Strzegomska',
+      password: '222222'
     },
     {
       index: '333333',
@@ -33,7 +35,8 @@ uzytkowniks = Uzytkownik.create(
       nazwisko: 'Ruski',
       nr_budynku_u: '5',
       nr_mieszkania_u: '3',
-      ulica_u: 'Grunwaldzka'
+      ulica_u: 'Grunwaldzka',
+      password: '333333'
     }
   ]
 )
@@ -76,41 +79,48 @@ produkts = Produkt.create(
       cena: '10',
       czas_przygotowania: '10',
       nazwa_produktu: 'Kurczak po chińsku',
-      opis_produktu: 'Kurczak z ryżem w sosie słodko-kwaśnym'
+      opis_produktu: 'Kurczak z ryżem w sosie słodko-kwaśnym',
+      id_restauracji: '1'
     },
     {
       id_produktu: '2',
       cena: '20',
       czas_przygotowania: '15',
       nazwa_produktu: 'Makaron chiński',
-      opis_produktu: 'Makaron z mięsem wieprzowym w sosie grzybowo sojowym'
+      opis_produktu: 'Makaron z mięsem wieprzowym w sosie grzybowo sojowym',
+      id_restauracji: '1'
     },
     {
       id_produktu: '3',
       cena: '8',
       czas_przygotowania: '10',
       nazwa_produktu: 'Pierogi z mięsem',
-      opis_produktu: 'Pierogi z mięsem i skwarkami'
-    }
+      opis_produktu: 'Pierogi z mięsem i skwarkami',
+      id_restauracji: '2'
+    },
     {
       id_produktu: '4',
       cena: '30',
       czas_przygotowania: '20',
       nazwa_produktu: 'Polski obiad',
-      opis_produktu: 'Kotlet schabowy z ziemniakami i surówką'
+      opis_produktu: 'Kotlet schabowy z ziemniakami i surówką',
+      id_restauracji: '2'
     },
     {
       id_produktu: '5',
       cena: '20',
       czas_przygotowania: '20',
       nazwa_produktu: 'Dorsz',
-      opis_produktu: 'Dorsz z frytkami i surówką'
+      opis_produktu: 'Dorsz z frytkami i surówką',
+      id_restauracji: '3'
     },
+    {
     id_produktu: '6',
     cena: '15',
     czas_przygotowania: '25',
     nazwa_produktu: 'Danie dnia',
-    opis_produktu: 'Mintaj w cieście naleśnikowym zapiekany w serze'
+    opis_produktu: 'Mintaj w cieście naleśnikowym zapiekany w serze',
+    id_restauracji: '3'
     }
   ]
 )
