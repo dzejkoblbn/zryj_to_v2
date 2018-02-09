@@ -34,6 +34,7 @@
   <strong>Ulica r:</strong>
   <%= @restauracja.ulica_r %>
 </p>
-
+<% if logged_in? %>
 <%= link_to 'Edit', edit_restauracja_path(@restauracja) %> |
+<%end%>
 <%= link_to 'Back', restauracjas_path %>

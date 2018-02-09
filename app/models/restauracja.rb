@@ -3,7 +3,7 @@ class Restauracja < ApplicationRecord
   has_and_belongs_to_many :obszars, :join_table => :restauracjas_obszars
   has_many :uzytkowniks
   has_many :produkts
-  validates :id_restauracji, presence: true, uniqueness: true, length: { is: 5 }
+  validates :id_restauracji, presence: true, uniqueness: true, length: { in: 1..6 }
   validates :nazwa_restauracji, presence: true, length: { in: 3..50 }
   validates :opis_restauracji, presence: true, length: { in: 3..1000 }
   validates :kod_pocztowy_r, presence: true, length: { is: 6 }

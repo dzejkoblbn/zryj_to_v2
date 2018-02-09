@@ -5,7 +5,7 @@ class Uzytkownik < ApplicationRecord
   has_one :typ, foreign_key: :id_typu
   has_secure_password
 
-  validates :index, presence: true, uniqueness: true, length: { is: 6 }
+  validates :index, presence: true, uniqueness: true, length: { in: 1..6 }
   validates :imie, presence: true, length: { in: 3..50 }
   validates :nazwisko, presence: true, length: { in: 3..50 }
   validates :kod_pocztowy_u, presence: true, length: { is: 6 }
